@@ -13,10 +13,11 @@ VQGAN_COMMIT_ID = "e93a26e7707683d349bf5d5c41c5b0ef69b677a9"
 
 
 # We can customize generation parameters (see https://huggingface.co/blog/how-to-generate)
-GEN_TOP_K = None
-GEN_TOP_P = None
-TEMPERATURE  = None
+GEN_TOP_K = 50
+GEN_TOP_P = 0.95
+TEMPERATURE  = 0.7
 COND_SCALE = 10.0
+
 
 class ModelSize(Enum):
     MINI = "Mini"
